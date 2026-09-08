@@ -1,26 +1,24 @@
 # Weather Station Simulator
 
-This is a simple Java project for practicing the Observer design pattern.
+This project is a simple weather station simulator written in Java.
 
-The program simulates a weather station that runs in its own thread and changes the temperature randomly. When the temperature changes, all registered observers are notified.
+The purpose of the project is to practice the Observer design pattern.
 
-The project has three observers:
-- Phone Display
-- Window Display
-- Weather Logger
+The weather station runs in its own thread and changes the temperature randomly. When the temperature changes, the registered observers receive the new temperature.
 
-During the simulation, the Window Display observer is removed. After that, it does not receive any more temperature updates.
+There are three observers in the program:
+- PhoneDisplay
+- WindowDisplay
+- WeatherLogger
 
-## How to run
+During the simulation, one observer is removed to demonstrate that it no longer receives updates.
 
-Compile the Java files:
+## Running the program
 
-javac *.java
+Run the Main class to start the simulation.
 
-Run the program:
+## Technologies
 
-java Main
-
-## Design Pattern
-
-This project uses the Observer design pattern.
+- Java
+- Observer Design Pattern
+- Threads
